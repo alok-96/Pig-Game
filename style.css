@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+    font-family: 'Nunito', sans-serif;
+    color:#333;
+    box-sizing: border-box;
+}
+
+.main-block{
+    position: absolute;
+    top: 12%;
+    left: 18%;
+    width: 65%;
+    height: 75%;
+    background-color: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.player{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.75s;
+}
+
+.name{
+    position: relative;
+    top: 5rem;
+    letter-spacing: 1px;
+    font-size: 2.5rem;
+}
+.player1{
+    border-radius: 10px 0px 0px 10px;
+    font-size: 1.2rem ;
+}
+
+.player2{
+    border-radius: 0px 10px 10px 0px;
+    font-size: 1.2rem ;
+}
+
+.player-active{
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.player-active .name{
+    font-weight: 700;
+}
+
+.player-winner{
+    background-color: #2f2f2f;
+}
+
+.player-winner .name{
+    font-weight: 700;
+    color: #c7365f;
+}
+
+.score{
+    position: relative;
+    top: 5rem;
+    font-size: 5rem;
+    color: #c7365f;
+}
+
+.current{
+    background-color: #c7365f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+    top: 15rem;
+}
+
+.current-label{
+    color: rgb(218, 218, 218);
+    font-size: 1rem;
+    padding: 1.2rem 4rem;
+}
+
+.current-score{
+    color: #fff;
+    font-size: 2rem;
+    padding-bottom: 1.3rem;
+}
+
+.btn{
+    position:absolute;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0.8rem 2rem;
+    border: 0;
+    border-radius: 50rem;
+    left: 44%;
+    color: #444;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+}
+
+.btn:active {
+    transform: translateY(1.5px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.btn-new{
+    top: 16%;
+}
+.btn-roll{
+    top: 58%;
+}
+.btn-hold{
+    top: 68%;
+    left: 45.5%;
+}
+.dice{
+    position: absolute;
+    left: 47.5%;
+    top: 30%;
+    width: 6rem;
+}
+
+.hidden{
+    display: none;
+}
