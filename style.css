@@ -124,6 +124,7 @@ body{
 }
 
 .dice{
+    z-index: 1;
     width: 5rem;
 }
 
